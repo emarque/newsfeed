@@ -1,0 +1,17 @@
+/*http://soccernet.espn.go.com/rss/news
+http://feeds.arstechnica.com/arstechnica/index
+http://sports.espn.go.com/espn/rss/nba/news
+http://www.wsws.org/en/rss.xml
+http://sports.espn.go.com/espn/rss/mlb/news
+https://theintercept.com/feed/?lang=en
+http://sports.espn.go.com/espn/rss/nfl/news
+*/
+.description .feedflare {
+  display: none;
+}
+.description img {
+  display: none;
+}
+.description p:nth-of-type(2){
+  display:none;
+}
