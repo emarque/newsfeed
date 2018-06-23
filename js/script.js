@@ -28,12 +28,9 @@ $(document).ready(function() {
                     tn++;
                 }
             });
-            
-            _totalNews = tn;
-            
+            $('#newsfeed').breakingNews({
+                effect: 'slide-up'
+            });
         }
-    });
-    $('#newsfeed').breakingNews({
-        effect: 'slide-up'
     });
 });
