@@ -413,6 +413,8 @@
                 'opacity' : 0
             }).show();
 
+            setCategory();
+            
             _ul.find('li').eq(_activeNews).animate({
                 'margin-top': 0,
                 'opacity' : 1,
