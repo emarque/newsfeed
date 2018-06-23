@@ -2,7 +2,35 @@
   <head>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script type="text/javascript" src="js/breaking-news-ticker.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+      //feed to parse
+      var feed = "https://feed.rssunify.com/5b2b311136f50/rss.xml";
+      $.ajax(feed, {
+        accepts:{
+          xml:"application/rss+xml"
+        },
+        dataType:"xml",
+        success:function(data) {
+          //Credit: http://stackoverflow.com/questions/10943544/how-to-parse-an-rss-feed-using-javascript
+
+          $(data).find("item").each(function () { // or "item" or whatever suits your feed
+                var el=$(this);
+            var $item = $("<li/>",{
+              class: "item"
+            }).append($("<div class='title'>" + el.find("title").text() + "</div>"))
+              .append($("<div class='description'>" + el.find("description").text() + "</div>")
+                      );
+              $item.remove(".feedflare, img, p:gt(0)");        
+              $item.appendTo($("#items"));
+          }); 
+        }
+      });
+      $('#newsfeed').breakingNews({
+        effect: 'slide-up'
+      });
+    });
+    </script>
     <link rel="stylesheet" href="css/breaking-news-ticker.css"></link>
     <link rel="stylesheet" href="css/style.css"></link>
   </head>
