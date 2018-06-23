@@ -77,8 +77,8 @@
             }
 
             $element.css({
-                'height'        : ticker.settings.height,
-                'line-height'   : (ticker.settings.height-(ticker.settings.borderWidth*2))+'px',
+                //'height'        : ticker.settings.height,
+                //'line-height'   : (ticker.settings.height-(ticker.settings.borderWidth*2))+'px',
                 'border-radius' : ticker.settings.radius,
                 'border-width'  : ticker.settings.borderWidth
             });
