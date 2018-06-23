@@ -10,10 +10,16 @@ $(document).ready(function() {
 			//Credit: http://stackoverflow.com/questions/10943544/how-to-parse-an-rss-feed-using-javascript
 
 			$(data).find("item").each(function () { // or "item" or whatever suits your feed
-        var el=$(this);
+        		var el=$(this);
 				$("<li/>",{
           class: "item"
-        }).append($("<div class='title'>" + el.find("title").text() + "</div>")).append($("<div class='description'>" + el.find("description").text() + "</div>")).appendTo($("#items"));
+        }).append($("<div class='title'>" + el.find("title").text() + "</div>"))
+					.append($("<div class='description'>" + el.find("description").text() + "</div>")
+					       .remove(".feedburner")
+						.remove("img")
+						.remove("p:gt(0)")
+						      )
+					.appendTo($("#items"));
 			}); 
 		}
 	});
