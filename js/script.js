@@ -11,15 +11,19 @@ $(document).ready(function() {
 
 			$(data).find("item").each(function () { // or "item" or whatever suits your feed
         		var el=$(this);
-				$("<li/>",{
+				var $item = $("<li/>",{
           class: "item"
-        }).append($("<div class='title'>" + el.find("title").text() + "</div>"))
-					.append($("<div class='description'>" + el.find("description").text() + "</div>")
-					       .remove(".feedburner")
-						.remove("img")
-						.remove("p:gt(0)")
-						      )
-					.appendTo($("#items"));
+        });
+        var $title = $("<div class='title'>" + el.find("title").text() + "</div>");
+					var $description = $("<div class='description'>" + el.find("description").text() + "</div>");
+          
+          $description = $(".feedflare, img, p:gt(0)",$description).remove().end();
+          $item.append($title);
+          $item.append($description);
+          
+          if($title.text().length > 0 && $description.text().length > 0){
+						$item.appendTo($("#items"));
+          }
 			}); 
 		}
 	});
