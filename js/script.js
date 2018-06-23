@@ -18,10 +18,10 @@ $(document).ready(function() {
                 });
                 var iLink = el.find("link").text();
                 if (iLink.includes("espn.com")){
-                    $item.attr("type") = "Sports";
+                    $item.attr("type","Sports");
                 }
                 else {
-                    $item.attr("type") = "News";
+                    $item.attr("type","News");
                 }
                 var $title = $("<div class='title'>" + el.find("title").text() + "</div>");
                 var $description = $("<div class='description'>" + el.find("description").text() + "</div>");
