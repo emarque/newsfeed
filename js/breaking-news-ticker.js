@@ -412,14 +412,11 @@
                 'margin-top': 30,
                 'opacity' : 0
             }).show();
-            
-            _ul.find('li').eq(_activeNews).css({
-                'display': table-cell
-            });
 
             _ul.find('li').eq(_activeNews).animate({
                 'margin-top': 0,
-                'opacity' : 1
+                'opacity' : 1,
+                'display' : 'table-cell'
             },ticker.settings.animateSpeed);
         }
 
