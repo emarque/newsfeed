@@ -14,10 +14,11 @@
             source      : "html",
             play        : true,
             delayTimer  : 15000,
-            scrollSpeed : 200,
+            scrollSpeed : 2000,
             stopOnHover : true,
             position    : 'auto',
-            zIndex      : 99999
+            zIndex      : 99999,
+            animateSpeed: 3000
         }
 
         var ticker = this;
@@ -303,7 +304,7 @@
         var scrollGoNextLTR = function(){            
             _ul.stop().animate({
                 marginLeft : - _ul.find('li:first-child').outerWidth()
-            },300, function(){
+            },ticker.settings.animateSpeed, function(){
                 _ul.find('li:first-child').insertAfter(_ul.find('li:last-child'));
                 _ul.css({'marginLeft': 0 });
                 _controlsIsActive = true;
@@ -313,7 +314,7 @@
         var scrollGoNextRTL = function(){
             _ul.stop().animate({
                 marginRight : - _ul.find('li:first-child').outerWidth()
-            },300, function(){
+            },ticker.settings.animateSpeed, function(){
                 _ul.find('li:first-child').insertAfter(_ul.find('li:last-child'));
                 _ul.css({'marginRight': 0 });
                 _controlsIsActive = true;
@@ -330,7 +331,7 @@
 
             _ul.stop().animate({
                 marginLeft : 0
-            },300, function(){
+            },ticker.settings.animateSpeed, function(){
                 _controlsIsActive = true;
             });
         }
@@ -345,7 +346,7 @@
 
             _ul.stop().animate({
                 marginRight : 0
-            },300, function(){
+            },ticker.settings.animateSpeed, function(){
                 _controlsIsActive = true;
             });
         }
@@ -383,7 +384,7 @@
             _ul.find('li:visible').animate({
                 'top':30,
                 'opacity':0
-            },300, function(){
+            },ticker.settings.animateSpeed, function(){
                 $(this).hide();
             });
 
@@ -395,7 +396,7 @@
             _ul.find('li').eq(_activeNews).animate({
                 'top': 0,
                 'opacity' : 1
-            },300);
+            },ticker.settings.animateSpeed);
         }
 
         var effectSlideUp = function(){
@@ -403,7 +404,7 @@
             _ul.find('li:visible').animate({
                 'top':-30,
                 'opacity':0
-            },300, function(){
+            },ticker.settings.animateSpeed, function(){
                 $(this).hide();
             });
 
@@ -415,7 +416,7 @@
             _ul.find('li').eq(_activeNews).animate({
                 'top': 0,
                 'opacity' : 1
-            },300);
+            },ticker.settings.animateSpeed);
         }
 
         var effectSlideLeft = function(){
@@ -423,7 +424,7 @@
             _ul.find('li:visible').animate({
                 'left':'50%',
                 'opacity':0
-            },300, function(){
+            },ticker.settings.animateSpeed, function(){
                 $(this).hide();
             });
 
@@ -435,7 +436,7 @@
             _ul.find('li').eq(_activeNews).animate({
                 'left': 0,
                 'opacity' : 1
-            },300);
+            },ticker.settings.animateSpeed);
         }
 
         var effectSlideRight = function(){
@@ -443,7 +444,7 @@
             _ul.find('li:visible').animate({
                 'left':'-50%',
                 'opacity':0
-            },300, function(){
+            },ticker.settings.animateSpeed, function(){
                 $(this).hide();
             });
 
@@ -455,7 +456,7 @@
             _ul.find('li').eq(_activeNews).animate({
                 'left': 0,
                 'opacity' : 1
-            },300);
+            },ticker.settings.animateSpeed);
         }
 
 
