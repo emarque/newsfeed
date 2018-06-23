@@ -13,8 +13,8 @@
             radius      : 2,
             source      : "html",
             play        : true,
-            delayTimer  : 4000,
-            scrollSpeed : 2,
+            delayTimer  : 15000,
+            scrollSpeed : 200,
             stopOnHover : true,
             position    : 'auto',
             zIndex      : 99999
