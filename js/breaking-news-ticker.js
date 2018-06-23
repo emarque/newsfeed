@@ -539,6 +539,32 @@
                 }
             }
         }
+        
+        var setCategory = function(item){
+            if (_activeNews > 0){
+                _ul.find('li').eq(_activeNews - 1).removeClass("active-item");
+            }
+            _ul.find('li').eq(_activeNews).addClass("active-item");
+            switch ($(".active-item .title").attr("type")){
+                case "sports":
+                    setCategoryStyle("Sports","#ce2525");
+                    break;
+                default:
+                    setCategoryStyle("News","#2569ce");
+                    break;
+            }
+        }
+        
+        var setCategoryStyle = function(var newLabel, var newColor){
+            $(".bn-label").animate({
+                'background-color': newColor
+            }, ticker.settings.animateSpeed);
+            $(".bn-label").text(newLabel)
+            $(".bn-breaking-news").animate({
+                'border':"solid 1px " + newColor
+            }, ticker.settings.animateSpeed);
+            
+        }
 
         /****************************************************/
         /**PUBLIC METHODS************************************/
