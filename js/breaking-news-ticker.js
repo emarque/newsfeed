@@ -495,8 +495,12 @@
                     break;
                 default:
                     _activeNews++;
-                    if (_activeNews >= _totalNews)
+                    if (_activeNews >= _totalNews && _totalNews > 0)
                         _activeNews = 0;
+                    if (_totalNews = 0){
+                        _totalNews = _ul.children("li").length;
+                        _activeNews++;
+                    }
 
                     showThis();
                     
