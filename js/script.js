@@ -16,7 +16,7 @@ $(document).ready(function() {
                 var $item = $("<li/>", {
                     class: "item"
                 });
-                var iLink = el.Find("link").text();
+                var iLink = el.find("link").text();
                 if (iLink.contains("espn.com")){
                     $item.attr("type") = "Sports";
                 }
