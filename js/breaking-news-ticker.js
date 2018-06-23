@@ -540,7 +540,7 @@
             }
         }
         
-        var setCategory = function(item){
+        var setCategory = function(){
             if (_activeNews > 0){
                 _ul.find('li').eq(_activeNews - 1).removeClass("active-item");
             }
@@ -555,7 +555,7 @@
             }
         }
         
-        var setCategoryStyle = function(var newLabel, var newColor){
+        var setCategoryStyle = function(newLabel, newColor){
             $(".bn-label").animate({
                 'background-color': newColor
             }, ticker.settings.animateSpeed);
