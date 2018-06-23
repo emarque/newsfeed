@@ -17,7 +17,7 @@ $(document).ready(function() {
                     class: "item"
                 });
                 var iLink = el.find("link").text();
-                if (iLink.contains("espn.com")){
+                if (iLink.includes("espn.com")){
                     $item.attr("type") = "Sports";
                 }
                 else {
