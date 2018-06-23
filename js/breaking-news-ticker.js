@@ -382,19 +382,19 @@
         var effectSlideDown = function(){
             
             _ul.find('li:visible').animate({
-                'top':30,
+                'margin-top':30,
                 'opacity':0
             },ticker.settings.animateSpeed, function(){
                 $(this).hide();
             });
 
             _ul.find('li').eq(_activeNews).css({
-                'top': -30,
+                'margin-top': -30,
                 'opacity' : 0
             }).show();
 
             _ul.find('li').eq(_activeNews).animate({
-                'top': 0,
+                'margin-top': 0,
                 'opacity' : 1
             },ticker.settings.animateSpeed);
         }
@@ -402,19 +402,19 @@
         var effectSlideUp = function(){
             
             _ul.find('li:visible').animate({
-                'top':-30,
+                'margin-top':-30,
                 'opacity':0
             },ticker.settings.animateSpeed, function(){
                 $(this).hide();
             });
 
             _ul.find('li').eq(_activeNews).css({
-                'top': 30,
+                'margin-top': 30,
                 'opacity' : 0
             }).show();
 
             _ul.find('li').eq(_activeNews).animate({
-                'top': 0,
+                'margin-top': 0,
                 'opacity' : 1
             },ticker.settings.animateSpeed);
         }
