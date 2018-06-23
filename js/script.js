@@ -8,7 +8,9 @@ $(document).ready(function() {
         dataType: "xml",
         success: function(data) {
             //Credit: http://stackoverflow.com/questions/10943544/how-to-parse-an-rss-feed-using-javascript
-
+            
+            var tn = 0;
+            
             $(data).find("item").each(function() { // or "item" or whatever suits your feed
                 var el = $(this);
                 var $item = $("<li/>", {
@@ -23,8 +25,12 @@ $(document).ready(function() {
 
                 if ($title.text().length > 0 && $description.text().length > 0) {
                     $item.appendTo($("#items"));
+                    tn++;
                 }
             });
+            
+            _totalNews = tn;
+            
         }
     });
     $('#newsfeed').breakingNews({
