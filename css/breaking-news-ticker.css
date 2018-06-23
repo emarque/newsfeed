@@ -3,10 +3,10 @@
   width: 100%;
   border: solid 1px #ce2525;
   background: #FFF;
-  height: 40px;
+  /* height: 40px; */
   box-sizing: border-box;
   position: relative;
-  line-height: 40px;
+  /* line-height: 20px; */
   overflow: hidden;
   border-radius: 2px;
   text-align: auto;
@@ -35,11 +35,11 @@
 /*********************************/
 /*title styles start**************/
 .bn-label{
-  left: 0;
-  top: 0;
-  bottom: 0;
-  height: 100%;
-  position: absolute;
+  /* left: 0; */
+  /* top: 0; */
+  /* bottom: 0; */
+  height: 100px;
+  /* position: absolute; */
   background-color: #ce2525;
   text-align: center;
   color: #FFF;
@@ -47,6 +47,8 @@
   z-index: 3;
   padding: 0 15px;
   white-space: nowrap;
+  display: table-cell;
+  vertical-align: middle;
 }
 /*title styles end****************/
 
@@ -55,35 +57,37 @@
 /*********************************/
 /*news item style start **********/
 .bn-news{
-  position: absolute;
+  /* position: absolute; */
   left: 0;
-  top: 0;
-  bottom: 0;
-  height: 100%;
-  right: 0;
-  overflow: hidden;
+  /* top: 0; */
+  /* bottom: 0; */
+  /* height: 100%; */
+  /* right: 0; */
+  /* overflow: hidden; */
+  display: table-cell;
+  /* float: left; */
 }
 .bn-news ul{
   display: block;
-  height: 100%;
+  /* height: 100%; */
   list-style: none;
   padding: 0;
   margin: 0;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  position: absolute;
+  /* left: 0; */
+  /* bottom: 0; */
+  /* width: 100%; */
+  /* position: absolute; */
 }
 .bn-news ul li{
   white-space: nowrap;
-  overflow:hidden !important;
+  /* overflow:hidden !important; */
   text-overflow: ellipsis;
   text-decoration: none;
   -webkit-transition: color .2s linear;
   -moz-transition: color .2s linear;
   -o-transition: color .2s linear;
   transition: color .2s linear;
-  position: absolute;
+  /* position: absolute; */
   width: 100%;
   display: none;
   color: #333;
