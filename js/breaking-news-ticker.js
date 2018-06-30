@@ -549,10 +549,10 @@
             _ul.find('li').eq(_activeNews).addClass("active-item");
             switch ($(".active-item .title").attr("type")){
                 case "Sports":
-                    setCategoryStyle("Sports","#ce2525");
+                    setCategoryStyle("SPORTS","#ce2525");
                     break;
                 default:
-                    setCategoryStyle("News","#2569ce");
+                    setCategoryStyle("NEWS","#2569ce");
                     break;
             }
         }
@@ -561,7 +561,7 @@
             $(".bn-label").animate({
                 'background-color': newColor
             }, ticker.settings.animateSpeed);
-            $(".bn-label").text(newLabel)
+            $(".bn-label .text").text(newLabel)
             $(".bn-breaking-news").animate({
                 'border':"solid 1px " + newColor
             }, ticker.settings.animateSpeed);
