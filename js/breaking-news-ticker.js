@@ -558,14 +558,13 @@
         }
         
         var setCategoryStyle = function(newLabel, newColor){
-            $(".bn-label").animate({
+            $(".bn-label").css({
                 'background-color': newColor
-            }, ticker.settings.animateSpeed);
-            $(".bn-label .text").text(newLabel)
+            });
+            $(".bn-label .text").text(newLabel);
             $(".bn-breaking-news").animate({
                 'border':"solid 1px " + newColor
             }, ticker.settings.animateSpeed);
-            
         }
 
         /****************************************************/
