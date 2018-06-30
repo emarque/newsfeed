@@ -547,7 +547,7 @@
                 _ul.find('li').eq(_activeNews - 1).removeClass("active-item");
             }
             _ul.find('li').eq(_activeNews).addClass("active-item");
-            switch ($(".active-item .title").attr("type")){
+            switch ($(".active-item").attr("type")){
                 case "Sports":
                     setCategoryStyle("SPORTS","#ce2525");
                     break;
