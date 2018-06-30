@@ -1,7 +1,7 @@
 .bn-breaking-news{
   display: block;
   width: 100%;
-  border: solid 1px #ce2525;
+  /*border: solid 1px #ce2525;*/
   background: #FFF;
   height: 100px;
   box-sizing: border-box;
@@ -31,7 +31,7 @@
 /*********************************/
 /*title styles start**************/
 .bn-label{
-  width: 40px;
+  width: 60px;
   height: 100px;
   /*background-color: #ce2569;*/
   text-align: center;
