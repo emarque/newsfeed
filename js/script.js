@@ -1,8 +1,8 @@
 $(document).ready(function() {
     //feed to parse
-    var feed = "https://www.wsws.org/en/rss.xml";
+    //var feed = "https://www.wsws.org/en/rss.xml";
     // re-enable once/if rssunify comes back
-    //var feed = "https://feed.rssunify.com/5b2b311136f50/rss.xml";
+    var feed = "https://feed.rssunify.com/5b2b311136f50/rss.xml";
     $.ajax(feed, {
         accepts: {
             xml: "application/rss+xml"
