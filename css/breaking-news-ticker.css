@@ -28,10 +28,6 @@
   bottom: 0;
 }
 
-
-
-
-
 /*********************************/
 /*title styles start**************/
 .bn-label{
@@ -49,6 +45,16 @@
   white-space: nowrap;
   display: table-cell;
   vertical-align: middle;
+}
+
+.bn-label .text{
+  height: auto;
+  background: none;
+  padding:0;
+  position: absolute;
+  top: 40;
+  left:0;
+  bottom:0;
 }
 /*title styles end****************/
 
