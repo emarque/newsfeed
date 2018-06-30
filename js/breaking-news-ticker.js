@@ -548,7 +548,7 @@
             }
             _ul.find('li').eq(_activeNews).addClass("active-item");
             switch ($(".active-item .title").attr("type")){
-                case "sports":
+                case "Sports":
                     setCategoryStyle("Sports","#ce2525");
                     break;
                 default:
