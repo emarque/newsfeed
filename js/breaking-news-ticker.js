@@ -562,9 +562,9 @@
                 'background-color': newColor
             });
             $(".bn-label .text").text(newLabel);
-            $(".bn-breaking-news").animate({
+            $(".bn-breaking-news").css({
                 'border':"solid 1px " + newColor
-            }, ticker.settings.animateSpeed);
+            });
         }
 
         /****************************************************/
