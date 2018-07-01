@@ -8,7 +8,7 @@
   position: relative;
   /* line-height: 20px; */
   overflow: hidden;
-  border-radius: 2px;
+  border-radius: 20px;
   text-align: auto;
   font-size: 14px;
 }
@@ -322,9 +322,9 @@
 }
 
 .item {
-    font-family: helvetica,arial,sans-serif;
-    font-size: 1.1em;
-    line-height: 1.4em;
+    font-family: 'helvetica','arial',sans-serif;
+    font-size: 1.05em;
+    line-height: 1em;
     padding: 5px;
     display: table-cell;
 }
@@ -338,6 +338,7 @@
     word-wrap: break-word;
     overflow-wrap: normal;
     max-height: 55px;
+    line-height: 1.1em;
 }
 
 /*********************************/
