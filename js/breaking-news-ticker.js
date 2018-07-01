@@ -10,15 +10,15 @@
             themeColor  : "default",
             background  : "default",
             borderWidth : 1,
-            radius      : 2,
+            radius      : 20,
             source      : "html",
             play        : true,
             delayTimer  : 15000,
-            scrollSpeed : 2000,
+            scrollSpeed : 1500,
             stopOnHover : true,
             position    : 'auto',
             zIndex      : 99999,
-            animateSpeed: 3000
+            animateSpeed: 1000
         }
 
         var ticker = this;
