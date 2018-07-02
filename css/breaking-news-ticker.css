@@ -344,8 +344,9 @@ body {
   word-wrap: break-word;
   overflow-wrap: normal;
   max-height: 20px;
-  line-height: .80em;
+  line-height: 1.22em;
   font-size: .79em;
+  margin-top: -.3em;
 }
 
 .description p {
