@@ -335,7 +335,7 @@ body {
 
 .title {
   font-size: .9em;
-  line-height: .3em;
+  line-height: 1em;
   font-weight: 600;
   padding: 5 0 10 0;
 }
@@ -348,5 +348,9 @@ body {
   font-size: .79em;
 }
 
+.description p {
+  padding: 0;
+  margin: 0;
+}
 /*********************************/
 /*********************************/
