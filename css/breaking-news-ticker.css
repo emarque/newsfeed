@@ -335,16 +335,16 @@ body {
 
 .title {
   font-size: .9em;
-  line-height: 1em;
+  line-height: .9em;
   font-weight: 600;
-  padding: 5 0 10 0;
+  padding: 0 0 5 0;
 }
 
 .description {
   word-wrap: break-word;
   overflow-wrap: normal;
   max-height: 20px;
-  line-height: 10px;
+  line-height: .80em;
   font-size: .79em;
 }
 
