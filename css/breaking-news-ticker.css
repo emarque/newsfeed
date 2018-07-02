@@ -1,3 +1,7 @@
+body {
+  background-color: black;
+  margin: 0;
+}
 .bn-breaking-news{
   display: block;
   width: 100%;
@@ -32,7 +36,7 @@
 /*title styles start**************/
 .bn-label{
   width: 150px;
-  height: 100px;
+  height: 50px;
   /*background-color: #ce2569;*/
   text-align: center;
   color: #FFF;
@@ -47,16 +51,16 @@
 .bn-label .text{
   height: auto;
   background: none;
-  padding:0;
+  padding: 0 0 0 10;
   position: absolute;
-  top: 30;
+  top: 12;
   left:0;
   bottom:0;
   font-family: 'avenir next', 'avenir', 'helvetica', 'arial', sans-serif;
-  font-weight: 300;
+  font-weight: 100;
   letter-spacing: 4.866;
   transform: scale(1,.966);
-  font-size: 2.0em;
+  font-size: 1.6em;
 }
 /*title styles end****************/
 
@@ -330,15 +334,18 @@
 }
 
 .title {
-    font-size: 1.4em;
-    line-height: 1.6em;
+  font-size: .9em;
+  line-height: .3em;
+  font-weight: 600;
+  padding: 5 0 10 0;
 }
 
 .description {
-    word-wrap: break-word;
-    overflow-wrap: normal;
-    max-height: 55px;
-    line-height: 1.1em;
+  word-wrap: break-word;
+  overflow-wrap: normal;
+  max-height: 20px;
+  line-height: 10px;
+  font-size: .79em;
 }
 
 /*********************************/
